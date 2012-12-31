@@ -6,7 +6,7 @@ Date:			5/7/09
 
 Version:		2.2
 
-Authors:		Michael Amorose
+Authors:		soundcore
 
 				Copyright 2009 Code Beauty, LLC.
 				All rights reserved worldwide.

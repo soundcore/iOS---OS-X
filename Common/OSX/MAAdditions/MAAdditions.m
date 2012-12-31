@@ -1,5 +1,4 @@
 #import <cb.h>
-
 #import "MAAdditions.h"
 
 #if TARGET_OS_IPHONE == 0

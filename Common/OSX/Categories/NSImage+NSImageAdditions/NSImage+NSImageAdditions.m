@@ -137,9 +137,9 @@ Changes:		See header.
 	[NSGraphicsContext saveGraphicsState];
 	[NSGraphicsContext setCurrentContext:imageContext];
 	
-	[self drawAtPoint:NSZeroPoint fromRect:NSZeroRect operation:NSCompositeCopy fraction:1.0];
+	[ self drawAtPoint:NSZeroPoint fromRect:NSZeroRect operation:NSCompositeCopy fraction:1.0 ];
 	
-	[NSGraphicsContext restoreGraphicsState];
+	[ NSGraphicsContext restoreGraphicsState ];
 	
 	return [imageRep autorelease];
 }

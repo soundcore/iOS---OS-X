@@ -6,9 +6,9 @@ Date:			5/20/11
 
 Version:		1.0
 
-Authors:		Michael Amorose
+Authors:		soundcore
 
-				Copyright 2011 Michael Amorose. All rights reserved worldwide.
+				Copyright 2011 soundcore. All rights reserved worldwide.
 
 Notes:			Header for NSObject+NSObjectAdditions.m
 
@@ -18,7 +18,7 @@ Notes:			Header for NSObject+NSObjectAdditions.m
 				Text Editing Preferences.
 
 WARNING:		UNDER NO CIRCUMSTANCES MAY THIS SOURCE CODE BE REDISTRIBUTED
-				WITHOUT EXPRESS WRITTEN PERMISSION OF MICHAEL AMOROSE. ANY
+				WITHOUT EXPRESS WRITTEN PERMISSION OF soundcore. ANY
 				SUCH DISTRIBUTION CARRIES SEVERE CRIMINAL AND CIVIL PENALTIES
 				AND IS A VIOLATION OF INTERNATIONAL COPYRIGHT LAW. VIOLATORS
 				WILL BE PROSECUTED TO THE FULL EXTENT OF INTERNATIONAL LAW.

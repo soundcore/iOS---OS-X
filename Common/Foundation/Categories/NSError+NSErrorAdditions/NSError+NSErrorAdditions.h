@@ -6,9 +6,9 @@ Date:			3/6/12
 
 Version:		1.0
 
-Authors:		Michael Amorose
+Authors:		soundcore
 
-				Copyright 2012 Michael Amorose
+				Copyright 2012 soundcore
 				All rights reserved worldwide.
 
 Notes:			Header for NSError+NSErrorAdditions.m
@@ -18,7 +18,7 @@ Notes:			Header for NSError+NSErrorAdditions.m
 
 WARNING:		UNDER NO CIRCUMSTANCES MAY THIS SOURCE CODE
 				BE REDISTRIBUTED WITHOUT EXPRESS WRITTEN PERMISSION
-				OF MICHAEL AMOROSE. ANY SUCH DISTRIBUTION CARRIES
+				OF soundcore. ANY SUCH DISTRIBUTION CARRIES
 				SEVERE CRIMINAL AND CIVIL PENALTIES AND IS A
 				VIOLATION OF INTERNATIONAL COPYRIGHT LAW.
 

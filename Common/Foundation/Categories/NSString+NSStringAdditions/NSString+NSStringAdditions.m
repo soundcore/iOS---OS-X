@@ -6,9 +6,9 @@ Date:			12/7/09
 
 Version:		1.0
 
-Authors:		Michael Amorose
+Authors:		soundcore
 
-				Copyright 2009 Michael Amorose
+				Copyright 2009 soundcore
 				All rights reserved worldwide.
 
 Notes:			Implementation of NSString+NSStringAdditions
@@ -18,7 +18,7 @@ Notes:			Implementation of NSString+NSStringAdditions
 
 WARNING:		UNDER NO CIRCUMSTANCES MAY THIS SOURCE CODE
 				BE REDISTRIBUTED WITHOUT EXPRESS WRITTEN PERMISSION
-				OF MICHAEL AMOROSE.
+				OF soundcore.
 
 				ANY SUCH DISTRIBUTION CARRIES SEVERE CRIMINAL AND CIVIL
 				PENALTIES AND IS A VIOLATION OF INTERNATIONAL

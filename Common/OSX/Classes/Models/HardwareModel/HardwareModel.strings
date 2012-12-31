@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	
+	<key>kgestaltCPU601</key>
+	<string>PowerPC 601</string>
+	<key>kgestaltCPU603</key>
+	<string>PowerPC 603</string>
+	<key>kgestaltCPU604</key>
+	<string>PowerPC 604</string>
+	<key>kgestaltCPU603e</key>
+	<string>PowerPC 603e</string>
+	<key>kgestaltCPU603ev</key>
+	<string>PowerPC 603ev</string>
+	<key>kgestaltCPU750</key>
+	<string>PowerPC 750</string>
+	<key>kgestaltCPU604e</key>
+	<string>PowerPC 604e</string>
+	<key>kgestaltCPU604ev</key>
+	<string>PowerPC 604ev (Mach 5, 250Mhz and up)</string>
+	<key>kgestaltCPUG4</key>
+	<string>PowerPC G4</string>
+	<key>kgestaltCPUG47450</key>
+	<string>PowerPC G4 7450 (Vger, Altivec)</string>
+	
+	<key>kgestaltCPUApollo</key>
+	<string>PowerPC G4 (Apollo, Altivec, G4 7455)</string>
+	<key>kgestaltCPUG47447</key>
+	<string>PowerPC G4</string>
+	<key>kgestaltCPU750FX</key>
+	<string>PowerPC G3 (Sahara, G3-like thing)</string>
+	<key>kgestaltCPU970</key>
+	<string>PowerPC G5</string>
+	<key>kgestaltCPU970FX</key>
+	<string>PowerPC G5</string>
+	<key>kgestaltCPU970MP</key>
+	<string>PowerPC G5 64-bit</string>
+	
+	<key>kgestaltCPU486</key>
+	<string>Intel x486</string>
+	<key>kgestaltCPUPentium</key>
+	<string>Intel x586</string>
+	<key>kgestaltCPUPentiumPro</key>
+	<string>Intel x586 Pro</string>
+	<key>kgestaltCPUPentiumII</key>
+	<string>Intel Pentium II</string>
+	<key>kgestaltCPUX86</key>
+	<string>Intel x86</string>
+	<key>kgestaltCPUPentium4</key>
+	<string>Intel Pentium 4</string>
+	
+	
+	<key>MY_CPU_TYPE_DEFAULT</key>
+	<string>Unknown CPU Type</string>
+	
+	<key>MY_CPU_TYPE_I386</key>
+	<string>Intel x86</string>
+	
+	<key>MY_CPU_TYPE_PPC</key>
+	<string>Motorola PowerPC</string>
+	
+	
+	<key>kHMNoMatchingHardwareModelFoundErrStringKey</key>
+	<string>No model found.</string>
+	
+	<key>kHWMachineInfoHardwareModelIsLabelKey</key>
+	<string>Hardware model is</string>
+	
+	<key>kHWMachineInfoHardwareModelNoMatchingEntryFoundKey</key>
+	<string>No matching entry found, hardware model is: %@</string>
+	
+	<key>kHWMachineInfoGHzLabelKey</key>
+	<string>GHz</string>
+	
+	<key>kHWMachineInfoMHzLabelKey</key>
+	<string>MHz</string>
+	
+	<key>kHWUnknownLabelKey</key>
+	<string>Unknown</string>
+	
+</dict>
+</plist>
