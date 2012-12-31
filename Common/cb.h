@@ -6,7 +6,9 @@ Date:			5/7/09
 
 Version:		2.2
 
-Authors:		soundcore
+Authors:		Michael Amorose
+
+				Copyright 2009 Code Beauty, LLC.
 				All rights reserved worldwide.
 
 Notes:			Remember to keep it fun.
@@ -14,13 +16,22 @@ Notes:			Remember to keep it fun.
 				Set tab width and indent width both to 4 In XCode's
 				Text Editing Preferences.
 
-Dependencies:	XCode 2.5
-				Cocoa
-				Carbon
-				Foundation
-Changes:		
+WARNING:		UNDER NO CIRCUMSTANCES MAY THIS SOURCE CODE
+				BE REDISTRIBUTED WITHOUT EXPRESS WRITTEN PERMISSION
+				OF CODE BEAUTY, LLC
 
-5/7/09			MCA Initial version.
+				ANY SUCH DISTRIBUTION CARRIES SEVERE CRIMINAL AND CIVIL
+				PENALTIES AND IS A VIOLATION OF INTERNATIONAL
+				COPYRIGHT LAW.
+
+				VIOLATORS WILL BE PROSECUTED TO THE
+				FULL EXTENT OF INTERNATIONAL LAW.
+
+Dependencies:	XCode 4.5
+				Foundation
+				Cocoa
+				
+Changes:		5/7/09 MCA Initial version.
 
 *****************************************************************************/
 
@@ -247,6 +258,7 @@ Changes:
 #define kCAFSoundFileExtension										@"caf"
 #define kSoundFileMIDFileExtension									@"mid"
 #define kSoundFileMP3FileExtension									@"mp3"
+#define kSoundFileMP4FileExtension									@"mp4"
 #define kSoundFileWAVFileExtension									@"wav"
 
 // MIME type constants
@@ -345,7 +357,7 @@ Changes:
 // Other weird crap
 
 #define kCapitalXString												@"X"
-#define kAtTwoXString												@"@2X"
+#define kAtTwoXString												@"@2x"
 
 // KB/MB/GB/TB/PT labels
 
@@ -409,6 +421,11 @@ Changes:
 #define kIOKitUSBLowPowerDisplayed									"Low Power Displayed"
 #define kIOKitUSBRequestedPower										"Requested Power"
 #define kIOKitUSBWakePowerAllocated									"PortUsingExtraPowerForWake"
+
+// Display Services Crap
+
+#define kDisplayServicesDisplayModeChangedFlags						0x00000001
+
 // URL schemes
 
 #define kHTTP_URL_Scheme											@"http"
@@ -417,6 +434,10 @@ Changes:
 // Keys in WebKit's _arguments dictionary passed to WebKit plugins
 
 #define kWebPlugInAttributeSrcKey									@"src"
+
+// UNIX
+
+#define kLocalHostExtensionNSString									@".local"
 
 // Keys in Carbon Process Manager ProcessInformationCopyDictionary dict
 
@@ -463,6 +484,10 @@ Changes:
 
 #define kHexFormatCocoaStringKey									@"0x%x"
 #define kLowercaseHexFormatString									@"%x"
+
+// ARC
+
+#define br															__bridge
 
 #endif
 
@@ -632,15 +657,37 @@ enum
 	
 // Message macros
 
-#define kMainBundle													[ NSBundle mainBundle ]
-#define kClearNSColor												[ NSColor clearColor ]
-#define kClearColor													[ UIColor clearColor ]
 #define UIApp														[ UIApplication sharedApplication ]					// Like the old NSApp but for iOS.
 #define UIAppDelegate												[ UIApp delegate ]
+#define kCurrentDevice												[ UIDevice currentDevice ]
+#define kCurrentDeviceUserInterfaceIdiom							[ kCurrentDevice userInterfaceIdiom ]
+#define kDefaultNotificationCenter									[ NSNotificationCenter defaultCenter ]
+#define kMainBundle													[ NSBundle mainBundle ]
+#define UIMainScreen												[ UIScreen mainScreen ]
+#define kMainScreenBounds											[ UIMainScreen bounds ]
+#define kClearNSColor												[ NSColor clearColor ]
+#define kClearColor													[ UIColor clearColor ]
+#define kMoreDarkGreyColor											[ UIColor darkGrayColor ]							// Need to fix this.
+#define kWhiteColor													[ UIColor whiteColor ]
+#define kDefaultTimeZone											[ NSTimeZone defaultTimeZone ]
 
 // Run Loop Stuff
 
 #define kDefaultRunLoopModeCommonModesArray							[ NSArray arrayWithObjects:NSDefaultRunLoopMode, NSRunLoopCommonModes, nil ]
+
+// GCD
+
+#define kGCD_GlobalHighPriorityQueue								dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_HIGH, 0 )
+#define kGCD_GlobalDefaultPriorityQueue								dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0 )
+#define kGCD_GlobalLowPriorityQueue									dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0 )
+
+// Blocks
+
+#define kVoidBlockCompletion										^{ }
+
+// iCloud
+
+#define kiCloudDefaultKeyValueStore									[ NSUbiquitousKeyValueStore defaultStore ]
 
 // Core Graphics handy macros
 
@@ -654,6 +701,7 @@ enum
 
 #define kRGBAllWhiteFloat											(CGFloat)255.0
 #define kZeroRect													NSMakeRect( (CGFloat)0.0, (CGFloat)0.0, (CGFloat)0.0, (CGFloat)0.0 )
+#define kSixteenToNineRatioMultiplier								1.5625
 
 // AppKit Message macros
 
@@ -756,16 +804,27 @@ enum
 
 // iPhone rotation constants
 
-#define kLandscapeRotationInDegrees									90
+#define kLandscapeRotationInDegrees									90.0
 
-#define kPhoneLandscapeWidth										480
-#define kPhoneLandscapeHeight										320
-#define kLandscapeRectTouchOffsetFactor								-80
+#define kPhone3LandscapeWidth										480.0
+#define kPhone3LandscapeHeight										320.0
+#define kPhone4LandscapeWidth										480.0
+#define kPhone4LandscapeWidth2X										960.0
+#define kPhone4LandscapeHeight										320.0
+#define kPhone5LandscapeWidth										568.0
+#define kPhone5LandscapeWidth2X										1136.0
+#define kPhone5LandscapeHeight										kPhone4LandscapeHeight
+#define kLandscapeRectTouchOffsetFactor								-80.0
+
+// iPad/iPhone .xib Conditional name endings
+
+#define kiPadXIBNameEndingString									@"_iPad"
+#define kiPhoneXIBNameEndingString									@"_iPhone"
 
 // Core Animation
 
 #define kCA90DegreeRotateTransform									CGAffineTransformMakeRotation( M_PI / kDoubleFloat )
 
-// Carbon Process Manager
+// Carbon Process Manager websiteGlobDesignDotComks
 
-#define kLowLongPSN													0x00000000FFFFFFFF
+#define kLowLongPSNwebsiteGlobDesignDotComk							0x00000000FFFFFFFF
